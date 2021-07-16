@@ -1,0 +1,214 @@
+2021-06-09 18:55:44,418 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-09 18:55:56,404 root Error occured here
+2021-06-09 18:55:56,405 root 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/json/__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 3 column 29 (char 68)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deepakmongia/Documents/Data Science/iNeuron/Python Class Work or Challenges/Flask API/FlaskAPI_All_Database_Operations/main.py", line 334, in mongodb_operations
+    request_type = request.json['request_type']
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 69, in json
+    return self.get_json()
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2021-06-09 18:55:56,408 werkzeug 127.0.0.1 - - [09/Jun/2021 18:55:56] "[37mPOST /mongodb HTTP/1.1[0m" 200 -
+2021-06-09 18:56:59,274 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-09 18:57:05,934 root Error occured here
+2021-06-09 18:57:05,934 root 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/json/__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 3 column 29 (char 68)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deepakmongia/Documents/Data Science/iNeuron/Python Class Work or Challenges/Flask API/FlaskAPI_All_Database_Operations/main.py", line 334, in mongodb_operations
+    request_type = request.json['request_type']
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 69, in json
+    return self.get_json()
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2021-06-09 18:57:05,939 werkzeug 127.0.0.1 - - [09/Jun/2021 18:57:05] "[37mPOST /mongodb HTTP/1.1[0m" 200 -
+2021-06-09 18:57:30,330 root Error occured here
+2021-06-09 18:57:30,331 root 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/json/__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 5 column 15 (char 131)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deepakmongia/Documents/Data Science/iNeuron/Python Class Work or Challenges/Flask API/FlaskAPI_All_Database_Operations/main.py", line 334, in mongodb_operations
+    request_type = request.json['request_type']
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 69, in json
+    return self.get_json()
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2021-06-09 18:57:30,335 werkzeug 127.0.0.1 - - [09/Jun/2021 18:57:30] "[37mPOST /mongodb HTTP/1.1[0m" 200 -
+2021-06-09 18:57:58,003 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-09 18:58:00,353 root Error occured here
+2021-06-09 18:58:00,353 root 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/json/__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 5 column 15 (char 131)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deepakmongia/Documents/Data Science/iNeuron/Python Class Work or Challenges/Flask API/FlaskAPI_All_Database_Operations/main.py", line 334, in mongodb_operations
+    request_type = request.json['request_type']
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 69, in json
+    return self.get_json()
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2021-06-09 18:58:00,359 werkzeug 127.0.0.1 - - [09/Jun/2021 18:58:00] "[37mPOST /mongodb HTTP/1.1[0m" 200 -
+2021-06-09 18:58:55,587 root Error occured here
+2021-06-09 18:58:55,587 root 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/json/__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 3 column 29 (char 72)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deepakmongia/Documents/Data Science/iNeuron/Python Class Work or Challenges/Flask API/FlaskAPI_All_Database_Operations/main.py", line 334, in mongodb_operations
+    request_type = request.json['request_type']
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 69, in json
+    return self.get_json()
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2021-06-09 18:58:55,588 werkzeug 127.0.0.1 - - [09/Jun/2021 18:58:55] "[37mPOST /mongodb HTTP/1.1[0m" 200 -
+2021-06-09 21:59:28,563 root Error occured here
+2021-06-09 21:59:28,563 root 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/json/__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 3 column 29 (char 72)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deepakmongia/Documents/Data Science/iNeuron/Python Class Work or Challenges/Flask API/FlaskAPI_All_Database_Operations/main.py", line 334, in mongodb_operations
+    request_type = request.json['request_type']
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 69, in json
+    return self.get_json()
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2021-06-09 21:59:28,564 werkzeug 127.0.0.1 - - [09/Jun/2021 21:59:28] "[37mPOST /mongodb HTTP/1.1[0m" 200 -
+2021-06-09 22:00:13,795 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-09 22:00:19,697 root Error occured here
+2021-06-09 22:00:19,698 root 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/json/__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 3 column 29 (char 72)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deepakmongia/Documents/Data Science/iNeuron/Python Class Work or Challenges/Flask API/FlaskAPI_All_Database_Operations/main.py", line 335, in mongodb_operations
+    request_type = request.json['request_type']
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 69, in json
+    return self.get_json()
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/werkzeug/wrappers/json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Users/deepakmongia/opt/anaconda3/envs/FlaskAPI_All_Database_Operations/lib/python3.8/site-packages/flask/wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2021-06-09 22:00:19,703 werkzeug 127.0.0.1 - - [09/Jun/2021 22:00:19] "[37mPOST /mongodb HTTP/1.1[0m" 200 -
